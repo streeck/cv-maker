@@ -245,7 +245,7 @@ function buildSkills() {
 
 function generateCV(json) {
     var jqxhr = $.ajax({
-        url: 'http://104.131.92.18/cv',
+        url: 'https://104.131.92.18/cv',
         type: 'POST',
         data: JSON.stringify(json),
         contentType: 'application/json; charset=UTF-8'
@@ -266,5 +266,5 @@ function generateCV(json) {
 }
 
 function downloadCV(fileName) {
-    window.location.href = 'http://localhost:5000/' + fileName;
+    window.location.href = 'https://localhost:5000/' + fileName;
 }
